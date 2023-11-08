@@ -1,0 +1,22 @@
+from conexion import Conexion
+
+if __name__ == "__main__":
+    conexion = Conexion()
+
+    # Crea las tablas
+    conexion.crear_tablas()
+
+    # Inserta ejemplos de datos (puedes personalizar los valores)
+    conexion.insertar_usuario('Usuario1', 'usuario1@example.com', 'contraseña1')
+    conexion.insertar_usuario('Usuario2', 'usuario2@example.com', 'contraseña2')
+
+    conexion.insertar_receta('Receta 1', 'Ingredientes de la receta 1', 'Instrucciones de la receta 1', 1)  # El último valor (1) es el autor_id
+    conexion.insertar_receta('Receta 2', 'Ingredientes de la receta 2', 'Instrucciones de la receta 2', 2)
+
+    conexion.insertar_comentario('Comentario 1', 1, 1)  # El último valor (1) es el receta_id
+    conexion.insertar_comentario('Comentario 2', 2, 1)
+
+    conexion.insertar_lista_compra('Lista 1', 'Elementos de la lista 1', 1)  # El último valor (1) es el propietario_id
+    conexion.insertar_lista_compra('Lista 2', 'Elementos de la lista 2', 2)
+
+    conexion.cerrar_conexion()

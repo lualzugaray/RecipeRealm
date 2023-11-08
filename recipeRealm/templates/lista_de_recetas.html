@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Recetas</title>
+</head>
+<body>
+    <h1>Lista de Recetas</h1>
+    <ul>
+        {% for receta in recetas %}
+            <li>{{ receta.titulo }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
