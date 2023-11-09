@@ -17,7 +17,6 @@ def main():
   receta1 = Receta(1, 'Receta 1', 'Ingredientes de la receta 1',
                    'Instrucciones de la receta 1', usuario1)
 
-  # Realizar operaciones con las clases
   usuario1.guardar_receta(receta1)
   usuario2.agregar_comentario(receta1, 'Un comentario')
 

@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>Registro - RecipeRealm</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='registro.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='registro.css') }}">
 </head>
-<body>
+<body class="register-page"> <!-- Agrega la clase 'register-page' -->
     <div class="container">
         <h2>Registro</h2>
         <form method="POST">
             <label for="nombre_usuario">Nombre de usuario:</label>
             <input type="text" name="nombre_usuario" required><br>
 
-            <label for="correo_electronico">Correo electrónico:</label>
+            <label for "correo_electronico">Correo electrónico:</label>
             <input type="email" name="correo_electronico" required><br>
 
             <label for="contraseña">Contraseña:</label>
